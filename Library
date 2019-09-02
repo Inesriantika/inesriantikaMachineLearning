@@ -1,0 +1,34 @@
+#### SAYA MENGGUNAKAN METODE CLUSTERING HIRARKI DAN (SVM OPTIONAL)
+
+import numpy as np
+import pandas as pd
+from scipy import ndimage
+from scipy.cluster import hierarchy 
+from scipy.spatial import distance_matrix
+from matplotlib import pyplot as plt
+from sklearn import manifold, datasets
+from sklearn.cluster import AgglomerativeClustering
+from sklearn.datasets.samples_generator import make_blobs
+%matplotlib inline
+from sklearn.preprocessing import MinMaxScaler 
+import scipy 
+import pylab
+import scipy.cluster.hierarchy
+from scipy.cluster.hierarchy import fcluster
+import seaborn as sns
+
+### svm 
+#import data
+import pandas as pd
+import pylab as pl
+import numpy as np
+import scipy.optimize as opt
+from sklearn import preprocessing
+from sklearn.model_selection import train_test_split
+%matplotlib inline
+import matplotlib.pyplot as plt  
+from sklearn import svm
+from sklearn.metrics import classification_report, confusion_matrix
+import itertools
+from sklearn.metrics import f1_score
+from sklearn.metrics import jaccard_similarity_score
