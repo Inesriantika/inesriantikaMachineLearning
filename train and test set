@@ -1,0 +1,15 @@
+y = data[['variety']].values
+y[0:10]
+
+### change lables of variety 
+from sklearn import preprocessing
+variety = preprocessing.LabelEncoder()
+variety.fit(['Setosa','Versicolor','Virginica'])
+y = variety.transform(y)
+
+
+
+##### make train set and test set 
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=4)
+print('Train set', X_train.shape, y_train.shape)
+print('test set', X_test.shape,y_test.shape)
